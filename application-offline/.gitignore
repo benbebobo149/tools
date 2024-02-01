@@ -1,0 +1,5 @@
+# ignore dist folder
+dist/
+
+# ignore build folder
+build/
