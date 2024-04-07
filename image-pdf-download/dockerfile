@@ -1,0 +1,14 @@
+# 使用官方 Python 运行时作为基础镜像
+FROM python:3.9-slim
+
+# 設定工作目錄
+WORKDIR /app
+
+# 將 requirements.txt 檔案從主機映射到容器內的 /app 目錄
+COPY requirements.txt .
+
+# 安裝 Python 依賴
+RUN pip install --no-cache-dir -r requirements.txt
+
+# 声明容器要运行的命令
+CMD ["python", "app.py"]

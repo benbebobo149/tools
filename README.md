@@ -23,3 +23,7 @@ conda env remove -n <env_name>
 
 pyinstaller --name application-offline --onefile main.py
 ```
+
+
+```
+
